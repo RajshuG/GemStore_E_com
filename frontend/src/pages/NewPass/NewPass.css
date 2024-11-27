@@ -1,0 +1,34 @@
+.new-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; 
+    margin: auto;
+    padding: 20px;
+}
+
+
+.new-password-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.new-password-input {
+    margin-bottom: 15px; 
+    padding: 10px;
+}
+
+.new-password-button {
+    background-color: rgb(97, 113, 134); 
+    color: white; 
+    padding: 10px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.new-password-button:hover {
+    background-color: rgb(144, 162, 185); 
+}

@@ -1,0 +1,51 @@
+.about-us-container {
+    background-color: #F5F5F5;
+    color: #333333;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    color: #333333;
+  }
+  
+  .about-header p {
+    font-size: 1.1rem;
+    color: #6B6E70;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .mission, .values {
+    background-color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #6B6E70;
+  }
+  
+  .mission h2, .values h2 {
+    color: #333333
+  }
+  
+  .values ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    color: #333333
+  }
+  
+  .values li {
+    margin: 0.5rem 0;
+    color: #6B6E70;
+  }
+  

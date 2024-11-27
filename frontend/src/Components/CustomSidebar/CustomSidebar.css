@@ -1,0 +1,128 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.custom-sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: opacity 0.4s ease; 
+    opacity: 0;
+}
+
+.custom-sidebar-overlay.active {
+    animation: fadeIn 0.4s forwards; 
+}
+
+.custom-sidebar-overlay:not(.active) {
+    animation: fadeOut 0.4s forwards; 
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.custom-sidebar {
+    position: fixed;
+    top: 56px; 
+    bottom: 0;
+    left: 0;
+    width: 250px; 
+    height: calc(100% - 56px); 
+    background-color: #f0f0f0;
+    z-index: 998;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    animation: slideOut 0.3s forwards;
+}
+
+.custom-sidebar.active {
+    animation: slideIn 0.3s forwards; /* Slide in when active */
+}
+
+.custom-sidebar .pro-sidebar {
+    height: 100%;
+    color: #333;
+}
+
+.custom-sidebar .pro-menu-item {
+    color: #333;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-sidebar .pro-menu-item:hover {
+    background-color: #e0e0e0;
+}
+
+.custom-sidebar .pro-menu-item .pro-icon-wrapper {
+    color: #333;
+}
+
+.custom-sidebar .pro-menu-item.active {
+    background-color: #d0d0d0;
+}
+
+.custom-sidebar .pro-sub-menu {
+    padding-left: 15px;
+}
+
+.custom-sidebar .pro-sub-menu .pro-menu-item {
+    font-size: 0.9em;
+}
+
+.product-display {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.product-image {
+    flex: 1 1 calc(30% - 20px); 
+    margin: 10px;
+    box-sizing: border-box; 
+}

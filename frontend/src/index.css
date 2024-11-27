@@ -1,0 +1,22 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+p{
+  font-family: Roboto, Arial;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body{
+  margin: 0;
+  background: #000;
+}
+
+.no-underline{
+  text-decoration: none;
+}
+
+.no-underline:hover{
+  text-decoration: none;
+}
